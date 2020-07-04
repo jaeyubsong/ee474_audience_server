@@ -7,6 +7,7 @@ import json
 import random
 import argparse
 import os
+import time
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 
@@ -16,10 +17,10 @@ app = Flask(__name__)
 # Get statistics
 def get_audience_statistics(image):
     # Implement code for getting statistics
-    sleep(0.3)
-    statistics = [random.random() for i in range(100)]
+    time.sleep(0.3)
+    statistics = [random.random() for i in range(5)]
     statistics_sum = sum(statistics)
-    statistics = [ i/statistics_sum for i in statistics ]
+    statistics = [ int(100*i/statistics_sum) for i in statistics ]
     total_faces = random.randint(5, 10)
     drowsy_faces = random.randint(1,3)
     return statistics, total_faces, drowsy_faces

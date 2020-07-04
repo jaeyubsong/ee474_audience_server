@@ -21,7 +21,7 @@ $ conda env create -f environment.yml
 
 - If creating the environment with environment.yml does not work, try the following
 ```
-$ conda env create --name ee474_audience_server
+$ conda env create --name ee474_audience_server python=3
 $ conda install -c conda-forge opencv=3.4.2
 $ conda install -c anaconda flask
 $ conda install -c anaconda requests
