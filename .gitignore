@@ -1,6 +1,11 @@
 *.mp4
 *.gif
 *.jpg
+*.png
+models/
+model-weights/
+frame/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
